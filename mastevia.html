@@ -20,63 +20,63 @@
       scroll-behavior: smooth;
     }
 
-    /* ===== HEADER CORPORATIVO CON LOGO GRANDE Y NOMBRE REDUCIDO ===== */
+    /* ===== HEADER CORPORATIVO - MÁS COMPACTO Y PROFESIONAL ===== */
     header {
       background: linear-gradient(135deg, #7bb04b 0%, #5f9440 100%);
       color: white;
-      padding: 2rem 1rem 1.8rem;
+      padding: 1.2rem 1rem 0.8rem;  /* Altura muy reducida */
       text-align: center;
-      box-shadow: inset 0 -2px 10px rgba(0,0,0,0.05), 0 4px 12px rgba(0,40,0,0.12);
+      box-shadow: 0 2px 8px rgba(0,40,0,0.15);
     }
 
     .logo-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.3rem; /* espacio reducido entre logo y texto */
+      gap: 0.1rem;  /* Mínimo espacio entre logo y texto */
     }
 
     .logo-img {
-      width: 160px;    /* tamaño aumentado significativamente */
+      width: 320px;    /* TAMAÑO DUPLICADO (antes 160px) */
       height: auto;
-      filter: drop-shadow(0 6px 8px rgba(0,40,0,0.25));
-      transition: transform 0.25s ease;
+      filter: drop-shadow(0 4px 6px rgba(0,40,0,0.2));
+      transition: transform 0.2s ease;
     }
 
     .logo-img:hover {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
 
     header h1 {
-      font-size: 2rem;       /* reducido de 2.7rem a 2rem */
-      font-weight: 550;
-      letter-spacing: -0.3px;
-      line-height: 1.1;
-      text-shadow: 0 2px 4px rgba(0,40,0,0.2);
-      margin-top: 0.2rem;
+      font-size: 1.4rem;       /* Título más pequeño */
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      line-height: 1;
+      text-shadow: 0 1px 3px rgba(0,40,0,0.2);
+      margin-top: 0;
     }
 
     header p {
-      font-size: 1.25rem;
+      font-size: 1rem;
       font-weight: 300;
       opacity: 0.95;
-      max-width: 600px;
-      margin: 0.5rem auto 0;
+      max-width: 500px;
+      margin: 0.2rem auto 0;
       background: rgba(255,255,255,0.15);
-      padding: 0.25rem 1.5rem;
-      border-radius: 60px;
+      padding: 0.15rem 1.2rem;
+      border-radius: 40px;
       backdrop-filter: blur(2px);
     }
 
-    /* ===== BARRA DE NAVEGACIÓN ===== */
+    /* ===== BARRA DE NAVEGACIÓN - MÁS DELGADA ===== */
     nav {
       background-color: #58823f;
-      padding: 0.9rem 0.5rem;
+      padding: 0.5rem 0.5rem;   /* Altura reducida */
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 10;
-      box-shadow: 0 4px 10px rgba(0,30,0,0.15);
+      box-shadow: 0 2px 6px rgba(0,30,0,0.15);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -87,63 +87,55 @@
       color: white;
       text-decoration: none;
       font-weight: 600;
-      font-size: 1.05rem;
-      padding: 0.4rem 0.2rem;
+      font-size: 0.95rem;
+      padding: 0.2rem 0.2rem;
       border-bottom: 2px solid transparent;
-      transition: border-color 0.2s, opacity 0.2s;
+      transition: border-color 0.2s;
       white-space: nowrap;
     }
 
     nav a:hover {
       border-bottom-color: #ffefc0;
-      opacity: 0.9;
     }
 
     /* ===== SECCIONES ===== */
     section {
-      padding: 2.8rem 2rem;
+      padding: 2rem 2rem;
       max-width: 1200px;
       margin: 0 auto;
       background-color: white;
-      border-radius: 36px 36px 24px 24px;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0, 20, 0, 0.04);
-      transition: box-shadow 0.3s;
-      scroll-margin-top: 5rem;
-    }
-
-    section:hover {
-      box-shadow: 0 12px 32px rgba(99, 153, 61, 0.08);
+      border-radius: 28px 28px 20px 20px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 16px rgba(0, 20, 0, 0.04);
+      scroll-margin-top: 4rem;
     }
 
     h2 {
       color: #3d6430;
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 600;
-      margin-bottom: 1.2rem;
-      border-left: 7px solid #88c057;
-      padding-left: 1.2rem;
-      letter-spacing: -0.3px;
+      margin-bottom: 1rem;
+      border-left: 5px solid #88c057;
+      padding-left: 1rem;
     }
 
     p, li {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       color: #2d3a28;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.6rem;
     }
 
     ul {
       list-style: none;
-      margin-top: 0.8rem;
+      margin-top: 0.5rem;
     }
 
     ul li {
       background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="%2388c057"><circle cx="12" cy="12" r="8"/></svg>') left center no-repeat;
       padding-left: 2rem;
       background-size: 1.2rem;
-      margin-bottom: 0.6rem;
-      font-weight: 450;
+      margin-bottom: 0.5rem;
     }
 
     /* destacar datos de contacto */
@@ -152,108 +144,87 @@
       background: #f1f8e9;
       padding: 0.15rem 0.6rem;
       border-radius: 30px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 600;
     }
 
-    /* ===== FOOTER ===== */
+    /* ===== FOOTER - MÁS COMPACTO ===== */
     footer {
       background: #58823f;
       color: #f5fae9;
       text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 3rem;
-      font-size: 1rem;
-      border-top: 6px solid #7bb04b;
+      padding: 1rem 1rem;      /* Altura reducida */
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      border-top: 3px solid #7bb04b;
     }
 
     footer p {
       color: #f5ffec;
       margin-bottom: 0;
-      font-weight: 400;
-      letter-spacing: 0.3px;
     }
 
-    /* ===== RESPONSIVE (ajustes para que el logo se vea bien en móviles) ===== */
+    /* ===== RESPONSIVE (logo enorme pero proporcional) ===== */
     @media (max-width: 700px) {
+      header {
+        padding: 1rem 0.5rem 0.6rem;
+      }
       .logo-img {
-        width: 130px;   /* sigue siendo grande pero proporcionado */
+        width: 260px;   /* DUPLICADO (antes 130px) */
       }
       header h1 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
       }
       header p {
-        font-size: 1.1rem;
-        padding: 0.2rem 1rem;
+        font-size: 0.9rem;
+        padding: 0.1rem 0.8rem;
+      }
+      nav {
+        padding: 0.4rem 0.3rem;
       }
       nav a {
-        font-size: 0.95rem;
-        white-space: normal;
+        font-size: 0.85rem;
       }
       section {
-        padding: 1.8rem 1.2rem;
-        border-radius: 28px;
-        margin-left: 0.8rem;
-        margin-right: 0.8rem;
+        padding: 1.5rem 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
       }
       h2 {
-        font-size: 1.9rem;
-        border-left-width: 5px;
+        font-size: 1.7rem;
       }
     }
 
     @media (max-width: 450px) {
       header {
-        padding: 1.5rem 0.8rem 1.2rem;
+        padding: 0.8rem 0.5rem 0.5rem;
       }
       .logo-img {
-        width: 110px;   /* mantiene tamaño grande aún en móvil pequeño */
+        width: 220px;   /* DUPLICADO (antes 110px) */
       }
       header h1 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
       }
       nav {
-        flex-direction: row;
-        gap: 0.3rem 0.8rem;
+        gap: 0.2rem 0.5rem;
       }
       nav a {
-        font-size: 0.9rem;
-        padding: 0.3rem 0;
+        font-size: 0.8rem;
+        white-space: normal;
       }
       p, li {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
     }
 
-    /* pantallas grandes: mayor elegancia */
+    /* pantallas grandes: logo aún más grande */
     @media (min-width: 1400px) {
       body {
         background-color: #f1f4ec;
       }
-      section {
-        max-width: 1300px;
-        padding: 3rem 3.5rem;
-      }
       .logo-img {
-        width: 180px;   /* aún más grande en escritorio amplio */
+        width: 360px;   /* DUPLICADO (antes 180px) */
       }
-    }
-
-    /* pequeños detalles de cards sutiles */
-    .brand-touch {
-      display: inline-block;
-      background: #e2f0d6;
-      border-radius: 50px;
-      padding: 0.1rem 1rem;
-      color: #2f5c1c;
-    }
-
-    /* efecto al pasar por secciones */
-    #inicio p:first-of-type::first-letter {
-      font-size: 2.2rem;
-      color: #7bb04b;
-      font-weight: 500;
-      padding-right: 2px;
     }
   </style>
 </head>
@@ -261,7 +232,7 @@
 
 <header>
   <div class="logo-container">
-    <!-- logo.png con tamaño muy aumentado y nombre de empresa reducido -->
+    <!-- logo.png con TAMAÑO DUPLICADO -->
     <img src="logo.png" alt="M.A Stevia logo" class="logo-img">
     <h1>M.A Stevia</h1>
   </div>
@@ -326,6 +297,6 @@
   <p>&copy; 2026 M.A Stevia - Dulzura natural para cada momento</p>
 </footer>
 
-<!-- logo prominente, nombre reducido, todo responsivo -->
+<!-- Logo duplicado, franjas verdes compactas, aspecto profesional -->
 </body>
 </html>
