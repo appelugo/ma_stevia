@@ -20,11 +20,11 @@
       scroll-behavior: smooth;
     }
 
-    /* ===== HEADER CORPORATIVO - MÁS COMPACTO Y PROFESIONAL ===== */
+    /* ===== HEADER SOLO CON LOGO ===== */
     header {
       background: linear-gradient(135deg, #7bb04b 0%, #5f9440 100%);
       color: white;
-      padding: 1.2rem 1rem 0.8rem;  /* Altura muy reducida */
+      padding: 0.6rem 1rem 0.4rem;  /* Aún más compacto, solo para el logo */
       text-align: center;
       box-shadow: 0 2px 8px rgba(0,40,0,0.15);
     }
@@ -33,45 +33,30 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.1rem;  /* Mínimo espacio entre logo y texto */
+      gap: 0;  /* Sin espacio */
     }
 
     .logo-img {
-      width: 320px;    /* TAMAÑO DUPLICADO (antes 160px) */
+      width: 320px;    /* Tamaño que te gustó */
       height: auto;
       filter: drop-shadow(0 4px 6px rgba(0,40,0,0.2));
       transition: transform 0.2s ease;
+      display: block;  /* Elimina espacio fantasma */
     }
 
     .logo-img:hover {
       transform: scale(1.02);
     }
 
-    header h1 {
-      font-size: 1.4rem;       /* Título más pequeño */
-      font-weight: 500;
-      letter-spacing: 0.5px;
-      line-height: 1;
-      text-shadow: 0 1px 3px rgba(0,40,0,0.2);
-      margin-top: 0;
-    }
-
-    header p {
-      font-size: 1rem;
-      font-weight: 300;
-      opacity: 0.95;
-      max-width: 500px;
-      margin: 0.2rem auto 0;
-      background: rgba(255,255,255,0.15);
-      padding: 0.15rem 1.2rem;
-      border-radius: 40px;
-      backdrop-filter: blur(2px);
+    /* Ocultamos completamente el título y el eslogan */
+    header h1, header p {
+      display: none;
     }
 
     /* ===== BARRA DE NAVEGACIÓN - MÁS DELGADA ===== */
     nav {
       background-color: #58823f;
-      padding: 0.5rem 0.5rem;   /* Altura reducida */
+      padding: 0.5rem 0.5rem;
       text-align: center;
       position: sticky;
       top: 0;
@@ -153,7 +138,7 @@
       background: #58823f;
       color: #f5fae9;
       text-align: center;
-      padding: 1rem 1rem;      /* Altura reducida */
+      padding: 1rem 1rem;
       margin-top: 2rem;
       font-size: 0.9rem;
       border-top: 3px solid #7bb04b;
@@ -164,20 +149,13 @@
       margin-bottom: 0;
     }
 
-    /* ===== RESPONSIVE (logo enorme pero proporcional) ===== */
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 700px) {
       header {
-        padding: 1rem 0.5rem 0.6rem;
+        padding: 0.5rem 0.5rem 0.3rem;
       }
       .logo-img {
-        width: 260px;   /* DUPLICADO (antes 130px) */
-      }
-      header h1 {
-        font-size: 1.3rem;
-      }
-      header p {
-        font-size: 0.9rem;
-        padding: 0.1rem 0.8rem;
+        width: 260px;
       }
       nav {
         padding: 0.4rem 0.3rem;
@@ -197,13 +175,10 @@
 
     @media (max-width: 450px) {
       header {
-        padding: 0.8rem 0.5rem 0.5rem;
+        padding: 0.4rem 0.5rem 0.2rem;
       }
       .logo-img {
-        width: 220px;   /* DUPLICADO (antes 110px) */
-      }
-      header h1 {
-        font-size: 1.2rem;
+        width: 220px;
       }
       nav {
         gap: 0.2rem 0.5rem;
@@ -217,13 +192,13 @@
       }
     }
 
-    /* pantallas grandes: logo aún más grande */
+    /* pantallas grandes: logo más grande */
     @media (min-width: 1400px) {
       body {
         background-color: #f1f4ec;
       }
       .logo-img {
-        width: 360px;   /* DUPLICADO (antes 180px) */
+        width: 360px;
       }
     }
   </style>
@@ -232,11 +207,12 @@
 
 <header>
   <div class="logo-container">
-    <!-- logo.png con TAMAÑO DUPLICADO -->
+    <!-- Solo el logo visible -->
     <img src="logo.png" alt="M.A Stevia logo" class="logo-img">
-    <h1>M.A Stevia</h1>
+    <!-- Título y eslogan eliminados visualmente -->
+    <h1 style="display: none;">M.A Stevia</h1>
+    <p style="display: none;">Dulzura natural para cada momento</p>
   </div>
-  <p>Dulzura natural para cada momento</p>
 </header>
 
 <nav>
@@ -297,6 +273,6 @@
   <p>&copy; 2026 M.A Stevia - Dulzura natural para cada momento</p>
 </footer>
 
-<!-- Logo duplicado, franjas verdes compactas, aspecto profesional -->
+<!-- Header con logo únicamente, sin texto -->
 </body>
 </html>
